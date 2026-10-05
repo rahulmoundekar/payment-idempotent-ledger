@@ -1,6 +1,19 @@
-# Idempotent Payment & Double-Entry Ledger API
+# 💳 Idempotent Payment & Double-Entry Ledger API
 
-A Spring Boot REST API for reliable payment processing using **idempotency**, **concurrent account locking**, and **double-entry ledger accounting**.
+<p align="center"><strong>Reliable payment processing with idempotency, transaction safety and accounting correctness.</strong></p>
+
+<p align="center"><img src="https://img.shields.io/badge/Java-21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21"/> <img src="https://img.shields.io/badge/Spring_Boot-4.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot"/> <img src="https://img.shields.io/badge/PostgreSQL-17-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/> <img src="https://img.shields.io/badge/JPA-0F172A?style=for-the-badge" alt="JPA"/></p>
+
+> A Spring Boot REST API that treats a payment as a correctness problem: retries must be safe, concurrent balance updates must be controlled, and every successful transfer must remain balanced in the ledger.
+
+## 🎯 What This Project Demonstrates
+
+- Idempotent APIs with Idempotency-Key
+- SERIALIZABLE transactions and deterministic account locking
+- Concurrent-safe balance updates
+- Double-entry accounting with DEBIT = CREDIT
+- PostgreSQL + Spring Data JPA
+- Pagination, validation and consistent API error handling
 
 ## Features
 
