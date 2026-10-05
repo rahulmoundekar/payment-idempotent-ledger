@@ -46,8 +46,6 @@
 - PostgreSQL + Spring Data JPA
 - Request validation
 
-> JWT authentication and security have already been implemented in the Shortify URL Shortener project and are intentionally not duplicated here.
-
 ## Tech Stack
 
 - Java
