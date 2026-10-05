@@ -15,6 +15,19 @@
 - PostgreSQL + Spring Data JPA
 - Pagination, validation and consistent API error handling
 
+## 🧭 Engineering Case Study
+
+| Concern | Design decision | Why it matters |
+|---|---|---|
+| Duplicate requests | Idempotency-Key + request conflict detection | Retries do not create duplicate payments |
+| Concurrency | Deterministic account locking + SERIALIZABLE | Conflicting balance updates are controlled |
+| Accounting | Double-entry ledger with DEBIT = CREDIT | Every successful transfer preserves a core invariant |
+| Recovery | Validation inside the transaction | Detected inconsistency triggers rollback |
+
+<p align="center">
+  <img src="assets/architecture.svg" width="100%" alt="Payment correctness architecture"/>
+</p>
+
 ## Features
 
 - Create payments between accounts
